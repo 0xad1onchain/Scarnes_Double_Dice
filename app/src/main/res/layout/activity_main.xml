@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.scarnesdice.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+   android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user"/>
+    <TextView
+        android:id="@+id/user_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Score: 0"
+        android:textSize="16sp"
+        android:padding="10sp"/>
+        <TextView
+            android:id="@+id/user_turn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn Score: 0"
+            android:textSize="16sp"
+            android:padding="10sp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/computer"
+            />
+    <TextView
+        android:id="@+id/comp_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Score: 0"
+        android:textSize="16sp"
+        android:padding="10sp"
+        android:layout_below="@+id/text_view_score"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       />
+        <TextView
+            android:id="@+id/comp_turn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn Score: 0"
+            android:textSize="16sp"
+            android:padding="10sp"
+            android:layout_below="@+id/text_view_score"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:text="Your Turn!"
+            android:id="@+id/label"
+            android:padding="2dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/user"
+            android:id="@+id/turn_image"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/image_view_dice2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/dice1"
+            android:padding="16sp"
+            android:layout_weight="1"
+
+             />
+
+
+        <ImageView
+            android:id="@+id/image_view_dice1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/dice1"
+            android:padding="16sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <Button
+            android:id="@+id/button_roll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="roll"
+            android:text="roll"
+
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_hold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="hold"
+            android:text="hold"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="reset"
+            android:padding="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
