@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             userturn.setText("Turn Score: " + userTurnScore);
             usertotal.setText("Total Score: " + userScore);
             comptotal.setText("Total Score: " + computerScore);
-            compturn.setText("Total Score: " + computerTurnScore);
+            compturn.setText("Turn Score: " + computerTurnScore);
             rollButton.setEnabled(false);
             Toast.makeText(getApplicationContext(),
                     "Game Over! You Win!", Toast.LENGTH_LONG).show();
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             userturn.setText("Turn Score: " + userTurnScore);
             usertotal.setText("Total Score: " + userScore);
             comptotal.setText("Total Score: " + computerScore);
-            compturn.setText("Total Score: " + computerTurnScore);
+            compturn.setText("Turn Score: " + computerTurnScore);
             rollButton.setEnabled(false);
             holdButton.setEnabled(false);
             user_Turn = true;
